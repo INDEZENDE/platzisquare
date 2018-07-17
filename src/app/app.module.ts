@@ -10,10 +10,10 @@ import { AgmCoreModule } from '@agm/core';
     AppComponent
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'YOUR_KEY'
+      apiKey: 'AIzaSyCiGsoFevMN2J-dXWtD_31AN4UkraR4Hq0'
     })
 
   ],
