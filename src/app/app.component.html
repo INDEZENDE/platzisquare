@@ -17,7 +17,7 @@
 
 
 <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-  <agm-marker   [latitude]="lat" [longitude]="lng"></agm-marker>
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
 <hr>
 <ul>
@@ -28,7 +28,7 @@
     <li *ngIf="lugares.active== false">{{lugares.nombre}}</li>
   </ng-container>
 </ul>
-<ul>
+<!-- <ul>
   <ng-container *ngFor="let lugares of lugares; let i=index" [ngSwitch]="lugares.cercania">
     <li [ngStyle]="{color:(lugares.active==false) ? 'green' : 'blue'}" [ngClass]="{numero_par:(i+1)%2==1}">{{lugares.nombre}}
       <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Muy cercano</span>
@@ -37,4 +37,10 @@
     </li>
   </ng-container>
 
+</ul> -->
+
+<ul>
+  <ng-container *ngFor="let lugares of lugares">
+    <li [ngStyle]="{color:(lugares.active)?'black':'gray'}">{{lugares.nombre}}</li>
+  </ng-container>
 </ul>
