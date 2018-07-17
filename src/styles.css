@@ -2,3 +2,7 @@
     background-color: aquamarine;
     color: blue;
 }
+
+agm-map {
+    height: 300px;
+  }

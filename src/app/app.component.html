@@ -14,6 +14,12 @@
   Mi nombre es: {{nombre1+" "+nombre2}}
 </div> -->
 
+
+
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+  <agm-marker   [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+<hr>
 <ul>
   <!-- <li>Floreria</li>
   <li>Restaurante</li>
@@ -28,7 +34,6 @@
       <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Muy cercano</span>
       <span *ngSwitchCase="2" [ngStyle]="{color: 'black'}">Cercano</span>
       <span *ngSwitchCase="3" [ngStyle]="{color: 'red'}">Lejano</span>
-
     </li>
   </ng-container>
 

@@ -7,21 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Cambio en .ts';
-  lugares:any = [
-    {cercania: 1, distancia:10, active: true, nombre: 'Floreria'},
-    {cercania: 2, distancia:20, active: true, nombre: 'Restaurante'},
-    {cercania: 3, distancia:30, active: false, nombre: 'Veterinaria'},
+  lugares: any = [
+    { cercania: 1, distancia: 10, active: true, nombre: 'Floreria' },
+    { cercania: 2, distancia: 20, active: true, nombre: 'Restaurante' },
+    { cercania: 3, distancia: 30, active: false, nombre: 'Veterinaria' },
   ];
+  lat = 19.4131565;
+  lng = -99.1931225;
+  zoom = 17;
 
-  // a=3;
-  // b=5;
-  // listo=false;
 
-  constructor(){
-  //   setTimeout(()=>{this.listo=true},3000)
-  // }
-  // hacerAlgo(){
-  //   alert("haciendo algo")
-  // }
+  constructor() {
+
   }
 }
+
+
