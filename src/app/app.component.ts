@@ -8,9 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Cambio en .ts';
   lugares: any = [
-    { cercania: 1, distancia: 10, active: true, nombre: 'Floreria' },
-    { cercania: 2, distancia: 20, active: true, nombre: 'Restaurante' },
-    { cercania: 3, distancia: 30, active: false, nombre: 'Veterinaria' },
+    { plan: 'gratuito', cercania: 1, distancia: 10, active: true, nombre: 'Floreria' },
+    { plan: 'pagado', cercania: 2, distancia: 20, active: true, nombre: 'Restaurante' },
+    { plan: 'pagado', cercania: 3, distancia: 30, active: false, nombre: 'Veterinaria' },
+    { plan: 'gratuito', cercania: 2, distancia: 20, active: false, nombre: 'Papeleria' },
+    { plan: 'gratuito', cercania: 2, distancia: 20, active: true, nombre: 'Cafeteria' },
+    { plan: 'pagado', cercania: 3, distancia: 30, active: false, nombre: 'Tienda de electrónica' },
   ];
   lat = 19.4131565;
   lng = -99.1931225;
